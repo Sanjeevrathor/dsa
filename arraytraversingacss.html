@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let data = [9,45,2,8,45,23,7,78,0,11,41,77]
+    //    for(let i =0; i<data.length; i++){
+    //       document.write(`Array ${i} is ${data[i]} <br>`)
+    //    }
+
+   function getElemnt(){
+       let el =  document.getElementById('element').value;
+       if(el<data.length && typeof parseInt(el)==='number' && el>=0){
+        alert(data[el])
+       }else{
+        alert('please enter valid input')
+       }
+    }
+      </script>
+      <input type="text" id="element">
+      <button onclick="getElemnt()">Get element</button>
+</body>
+</html>
