@@ -8,10 +8,25 @@
 </head>
 <body>
     <script>
-        let data = [60,30,10,67,40]
+        // let data = [60,30,10,67,40]
+        // let newEl=70;
+        // let position =2;
+        // console.log(data)
+        // for(let i = data.length-1;i>=0; i--){
+        //     if(i>=position){
+        //         data[i+1] = data[i];
+        //         if(i==position){
+        //             data[i]=newEl
+        //         }
+        //     }
+        // }
+        // console.log(data)
 
-        let newEl=70;
-        let position =2;
+        function insertEl(){
+             let data = [60,30,10,67,40]
+        let newEl= document.getElementById('elemnt').value;
+        let position =document.getElementById('position').value;
+        newEl = parseInt(newEl)
         console.log(data)
         for(let i = data.length-1;i>=0; i--){
             if(i>=position){
@@ -22,6 +37,12 @@
             }
         }
         console.log(data)
+        }
     </script>
+    <input type="text" id="elemnt" placeholder="enter new element">
+    <input type="text" id="position" placeholder="enter position">
+    <button onclick="insertEl()">
+        insert elemnt
+    </button>
 </body>
 </html>
